@@ -18,5 +18,5 @@ No installation required for the Google Chrome Web browser.
 ### Node.js/Google Chrome Web browser
 
 ```js
-import svdcmp from 'matrix-computations';
+import svdcmp from 'singular-value-decomposition';
 ```
