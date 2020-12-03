@@ -87,4 +87,4 @@ Returns:
 ]
 ```
 
-Notice: the first rows/columns need to be removed.
+Notice: the first row/column need to be removed.
