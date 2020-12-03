@@ -483,6 +483,23 @@ function pythag(a, b){
     else return (absb == 0.0 ? 0.0 : absb*Math.sqrt(1.0+SQR(absa/absb)));
 }
 
+//Taken from rot3dfit.js
+function svdClean(A){
+    var dim = size(A);
+    var m = dim[0]; //Rows.
+    
+    if(m > 1){
+        for(var i=0;i<m;i=i+1){ //For each row of 'A' drop the extra element '0.0' at the beginning of the array (beginning of the row).
+            A[i].shift();
+        }
+        A.shift(); //Drop the first row.
+    } else {
+        A.shift(); //It is a row vector hence just drop the first element.
+    }
+    
+    return A;
+}
+
 //ref: hlao.mjs
 function zeros_vector(r,type){
     var u = [];
@@ -543,5 +560,6 @@ function IMIN(a,b){
 }
 
 export {
-    svdcmp
+    svdcmp,
+    svdClean
 };
