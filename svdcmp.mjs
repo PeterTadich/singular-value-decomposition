@@ -500,6 +500,19 @@ function svdClean(A){
     return A;
 }
 
+//ref: z.js
+function size(X){
+    if(typeof X[0].length == 'undefined'){ //row vector
+        var m = 1;
+        var n = X.length;
+    }
+    else{
+        var m = X.length;
+        var n = X[0].length;
+    }
+    return [m,n];
+}
+
 //ref: hlao.mjs
 function zeros_vector(r,type){
     var u = [];
