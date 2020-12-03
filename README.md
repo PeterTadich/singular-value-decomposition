@@ -18,7 +18,7 @@ No installation required for the Google Chrome Web browser.
 ### Node.js/Google Chrome Web browser
 
 ```js
-import svdcmp from 'singular-value-decomposition';
+import * as svdcmp from 'singular-value-decomposition';
 ```
 
 ## Examples
@@ -86,3 +86,5 @@ Returns:
   ]
 ]
 ```
+
+Notice: the first rows/columns need to be removed.
