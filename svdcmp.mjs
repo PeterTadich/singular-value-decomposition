@@ -505,7 +505,7 @@ function zeros_vector(r,type){
     return u;
 }
 
-/ref: hlao.mjs
+//ref: hlao.mjs
 //REF: http://stackoverflow.com/questions/15313418/javascript-assert
 function assert(condition, message){
     if(!condition){
