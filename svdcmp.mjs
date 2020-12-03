@@ -176,6 +176,7 @@ W = [0, 0.6268282324175404, 14.269095499261486];
 V = [[0, 0, 0], [0, -0.767187395072177, -0.6414230279950724], [0, 0.6414230279950723, -0.7671873950721768]];
 
 //EXAMPLE 4:
+//Matlab:
 A = [2 0 2; 0 1 0; 0 0 0]
 [U,S,V] = svd(A)
 U =
@@ -193,7 +194,7 @@ V =
 % Calculate the rank using the number of nonzero singular values.
 s = diag(S);
 rank_A = nnz(s)
-rank_A returns 2
+% rank_A returns 2
 
 //JavaScript:
 var m = 3;
@@ -227,6 +228,7 @@ V = [
 ]
 
 //EXAMPLE 5:
+//JavaScript:
 var m = 3;
 var n = 3;
 var a = [
@@ -242,11 +244,12 @@ console.log(uwv);
 var w = uwv[1];
 w.shift(); // Drop the first element in the array as it is zero.
 
-matrix_rank = matrix_rank(w);
+var rank = matrix_rank(w);
 
-console.log('Matrix Rank = ' + matrix_rank); // returns Matrix Rank = 2
+console.log('Matrix Rank = ' + rank); // returns 'Matrix Rank = 2'
 
 //EXAMPLE 6:
+//JavaScript:
 var m = 6;
 var n = 6;
 
