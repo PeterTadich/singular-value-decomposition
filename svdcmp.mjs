@@ -513,6 +513,35 @@ function assert(condition, message){
     }
 }
 
+//#define FMAX(a,b) (maxarg1=(a),maxarg2=(b),(maxarg1) > (maxarg2) ? (maxarg1) : (maxarg2))
+function FMAX(a,b){
+    var maxarg1 = a;
+    var maxarg2 = b;
+    if(maxarg1 > maxarg2) return maxarg1;
+    else return maxarg2;
+}
+
+//#define SQR(a) ((sqrarg=(a)) == 0.0 ? 0.0 : sqrarg*sqrarg)
+function SQR(a){
+    var sqrarg = a;
+    if(sqrarg == 0.0) return 0.0;
+    else return (sqrarg * sqrarg);
+}
+
+//#define SIGN(a,b) ((b) >= 0.0 ? fabs(a) : -fabs(a))
+function SIGN(a,b){
+    if(b >= 0.0) return Math.abs(a);
+    else return -1.0*Math.abs(a);
+}
+
+//#define IMIN(a,b) (iminarg1=(a),iminarg2=(b),(iminarg1) < (iminarg2) ? (iminarg1) : (iminarg2))
+function IMIN(a,b){
+    var iminarg1 = a;
+    var iminarg2 = b;
+    if(iminarg1 < iminarg2) return iminarg1;
+    else return iminarg2;
+}
+
 export {
     svdcmp
 };
