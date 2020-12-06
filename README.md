@@ -1,6 +1,14 @@
 # singular-value-decomposition
 Matrix decomposition.
 
+## Dependencies
+
+There is 1 dependency 'matrix-computations'.
+
+```bash
+https://github.com/PeterTadich/matrix-computations
+```
+
 ## Installation
 
 ### Node.js
