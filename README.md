@@ -14,7 +14,7 @@ https://github.com/PeterTadich/matrix-computations
 ### Node.js
 
 ```bash
-npm install https://github.com/PeterTadich/singular-value-decomposition#main
+npm install https://github.com/PeterTadich/singular-value-decomposition
 ```
 
 ### Google Chrome Web browser
