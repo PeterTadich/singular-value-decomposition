@@ -23,10 +23,16 @@ No installation required for the Google Chrome Web browser.
 
 ## How to use
 
-### Node.js/Google Chrome Web browser
+### Node.js
 
 ```js
 import * as svdcmp from 'singular-value-decomposition';
+```
+
+### Google Chrome Web browser
+
+```js
+import * as svdcmp from './svdcmp.mjs';
 ```
 
 ## Examples
